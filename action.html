@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            background: rgb(87, 84, 84,0.1);
+            min-height: 100vh;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            align-items: center;
+        }
+        .role1{
+            width: 300px;
+        }
+        .cardcontainer{
+            width: 1000px;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+        }
+        .title h1{
+            background:linear-gradient(45deg, #874da2 0%, #c43a30 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-align: center;
+            margin: 30px;
+            font-size: 50px;
+            font-weight: 1200;
+        }
+        .container .card{
+            position: relative;
+        }
+        .cardcontainer h3{
+            color: rgb(154,85,9);
+        }
+        .container .card .face{
+            width: 300px;
+            height: 210px;
+        }
+        p{
+            color: rgb(154,85,9);
+        }
+        .container .card .face.face1{
+            position: relative;
+            background: linear-gradient(to top, #dbdcd7 0%, #dddcd7 24%, #e2c9cc 30%, rgb(153,90,56) 46%, rgb(131,73,49)50%, rgb(152,87,54) 71%, #955257 84%, #754063 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            z-index: 1;
+            transform: translateY(100px);
+            transition: 0.5s;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .container .card:hover .face.face1{
+            transform:translateY(0px);
+            transition: 0.5s;
+        }
+        .cardcontainer .card .face.face2{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-self: start;
+            padding: 20px;
+            box-sizing: border-box;
+            box-shadow: 0 10px 50px rgba(0, 0, 0, 0.5);
+            /* box-shadow: darkgray(0px 0px 0px 200px); */
+            transform: translateY(-100px);
+            transition: 0.5s;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            background:#dbdcd7 ;
+           
+        }
+        .cardcontainer .card:hover .face.face2{
+            transform: translateY(0px);
+            transition: 0.5s;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="title">
+        <h1>提瓦特大陆</h2>
+    </div>
+    <div class="container">
+        
+        <div class="cardcontainer">
+            <div class="card">
+                <div class="face face1">
+                    <img src="角色素材/甘雨.png" class="role1">
+                    <h3>甘雨</h3>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p>
+                            甘雨，米哈游出品的游戏《原神》及其衍生作品中的角色，璃月七星的秘书，体内流淌着人类与仙兽的血脉。天性优雅娴静，但仙兽“麒麟”温柔的性情与坚定毅重的工作态度毫无冲突。毕竟，甘雨坚信自己所做的一切工作都是为了践行与帝君的契约，谋求璃月众生的最大福祉。
+                        </p>
+                    </div>
+                </div>
+            </div>  
+        </div>
+        <div class="cardcontainer">
+            <div class="card">
+                <div class="face face1">
+                    <img src="角色素材/刻晴.png" class="role1">
+                    <h3>刻晴</h3>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p>
+                            刻晴是游戏《原神》中的5星雷系角色，璃月七星之一，玉衡星。对“帝君一言而决的璃月”颇有微词，但实际上，神挺欣赏她这样的人。刻晴坚信与人类命运相关的事，应当由人类去做，而且人类一定可以做得更好。为了证明这一点，她比任何人都要努力。
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+            
+        </div>
+        <div class="cardcontainer">
+            <div class="card">
+                <div class="face face1">
+                    <img src="角色素材/钟离.png" class="role1">
+                    <h3>钟离</h3>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p>
+                            钟离是游戏《原神》中的5星岩系角色。应“往生堂”邀请而来的神秘客卿。
+                            <br>
+                            钟离样貌俊美，举止高雅，拥有远超常人的学识。虽说来历不明，却知礼数、晓规矩。坐镇“往生堂”，能行天地万物之典仪。
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+            
+        </div>
+        <div class="cardcontainer">
+            <div class="card">
+                <div class="face face1">
+                    <img src="角色素材/魈.png" class="role1">
+                    <h3>魈</h3>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p>
+                            魈，米哈游出品的游戏《原神》及其衍生作品中的角色。
+                            <br>
+                            守护璃月港的“三眼五显仙人”之一，美号“降魔大圣”，妙称“护法夜叉大将”。
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+            
+        </div>
+        <div class="cardcontainer">
+            <div class="card">
+                <div class="face face1">
+                    <img src="角色素材/胡桃.png" class="role1">
+                    <h3>胡桃</h3>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p>
+                            胡桃，米哈游出品的游戏《原神》及其衍生作品中的角色，璃月“往生堂”第七十七代堂主，掌控着璃月葬仪事务的重要人物。尽心尽力地为人们完成送别之仪，维护着世间阴阳平衡之道。除此以外还是个神奇打油诗人，诸多“杰作”被璃月人口口相传。
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+            
+        </div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>

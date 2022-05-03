@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		*{margin: 0px;padding: 0px;}
+		#body{
+			width: auto;
+			height: 100vh;
+			background: rgb(184, 131, 131);
+			background:url(背景/璃月背景.jpg);
+			background-size: 2000px;
+			background-repeat: no-repeat;
+		}
+		#head{
+			background: rgb(77,77,77,0.7);
+			width: auto;
+			height: 100px;
+		}
+		#logo{
+			width: 130px;
+			height: 80px;
+		}
+		.toptxt{
+			font: 30px 黑体 ;
+			color:rgba(255, 255, 255, 0.8);
+			float: left;width: 100px;
+			height: 100px;
+			text-align: center;
+			padding-top: 30px;
+		}
+		#imglogo{
+			text-align: auto;
+			float: left;
+			margin-left: 8%;
+			margin-top: 10px;
+		}
+		#load{
+			width: 200px;
+			height: 100px;
+			float: right; 
+			padding-top: 30px;
+			position: relative;
+		}
+		#denglu{
+			font: 30px 黑体 ;
+			color:rgba(255, 255, 255, 0.8);
+			padding-right: 20px;
+			float: left;
+		}
+		ul{
+			list-style: none;
+			text-align: center;
+		}
+		#load li{
+			opacity: 0;
+            height: 0;
+            transition: .3s;
+            list-style: none;
+			color: rgb(255, 255, 255);
+			font-family: 黑体;
+			font-size: 20px;
+		}
+		#load:hover li{
+			transform: translateY(20px);
+           	height: 30px;
+           	width: 200px;
+          	opacity: 1;
+			background: rgb(77,77,77,0.8);
+			padding-top: 5px;
+           	
+		}
+		#load:hover #topli{
+			transform: translateY(20px);
+           	height: 30px;
+           	width: 200px;
+          	opacity: 1;
+			background: rgb(77,77,77,0.8);
+			padding-top: 5px;
+			border-top-left-radius: 10px;
+			border-top-right-radius: 10px;	
+		}
+		#load:hover #dawnli{
+			transform: translateY(20px);
+           	height: 30px;
+           	width: 200px;
+          	opacity: 1;
+			background: rgb(77,77,77,0.8);
+			padding-top: 5px;
+			border-bottom-left-radius: 10px;
+			border-bottom-right-radius: 10px;
+		}
+		iframe{
+			width: 100%;
+			height: 100vh;
+			margin-top: -30px;
+			float: left;
+			
+		}
+		a{
+			text-decoration: none;
+		}
+		a:link,a:visited{
+			color: rgb(255, 255, 255);
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+	<div id="body">
+		<div id="head">
+			<span id="imglogo"><img src="logo\原神标志.png" id="logo"></span>
+			<span class="toptxt"><a href="二级菜单缓动测试.html" target="iframe">首页</a></span>
+			<span class="toptxt"><a href="#" target="iframe">资讯</a></span>
+			<span class="toptxt"><a href="角色.html" target="iframe">角色</a></span>
+			<span class="toptxt"><a href="#" target="iframe">世界</a></span>
+			<span class="toptxt"><a href="#" target="iframe">社区</a></span>	
+			<span id="load">
+				<span id="denglu">登陆</span><img src="logo\登陆.png" alt="登陆">
+				<ul>
+					<li id="topli">列表</li>
+					<li>列表</li>
+					<li>列表</li>
+					<li id="dawnli">列表</li>
+				</ul>
+			</span>
+			
+	
+		</div>
+		<iframe src="二级菜单缓动测试.html" name="iframe" frameborder="0" scrolling="no"></iframe>
+	</div>
+</body>
+</html>
